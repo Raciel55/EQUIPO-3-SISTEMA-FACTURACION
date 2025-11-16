@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style-dashboard.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #009966">
+        <div class="container-fluid">
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../img/cfe.png" alt="Logo" width="40" height="40" class="me-2 rounded">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- MENU ITEMS -->
+                <ul class="navbar-nav ms-0 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./informacion.html">Mi Información</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./generar.html">Generar Factura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Consumo</a>
+                    </li>
+                </ul>
+
+                <!-- SPACER TO PUSH EXIT TO THE RIGHT -->
+                <div class="ml-auto"></div>
+
+                <!-- EXIT BUTTON -->
+                <a href="#" class="btn btn-outline-light">
+                    Cerrar Sesión
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="row d-flex justify-content-center w-100">
+
+            <!-- MAIN CONTENT -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4">
+
+                <div class="container text-center mt-4">
+                    <div class="row g-4">
+
+                        <div class="col-md-4">
+                            <div class="card shadow-sm p-3 h-100">
+                                <img src="../img/pago.png" class="icon-card-img mx-auto" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Mantente al día con tus pagos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card shadow-sm p-3 h-100">
+                                <img src="../img/gobierno.png" class="icon-card-img mx-auto" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Consulta apoyos gubernamentales</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card shadow-sm p-3 h-100">
+                                <img src="../img/consumo.png" class="icon-card-img mx-auto" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Modera tu consumo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <!-- TABLE -->
+                <div class="card mt-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Descarga tu Factura del Periodo Correspondiente</h5>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Periodo Facturado</th>
+                                    <th>Estatus</th>
+                                    <th>Descargar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>09/2025 - 11/2025</td>
+                                    <td class="text-danger">No Emitida</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>09/2025 - 11/2025</td>
+                                    <td class="text-warning">Pendiente de Pago</td>
+                                    <td><img src="../img/descarga.png" alt="" srcset=""
+                                            style="width: 50px; height: 50px;"></td>
+                                </tr>
+                                <tr>
+                                    <td>07/2025 - 09/2025</td>
+                                    <td class="text-success">Pagado</td>
+                                    <td><img src="../img/descarga.png" alt="" srcset=""
+                                            style="width: 50px; height: 50px;"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+
+</html>

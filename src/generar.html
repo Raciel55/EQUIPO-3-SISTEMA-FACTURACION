@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Factura</title>
+
+    <!-- BOOTSTRAP 4.5.2 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- TU CSS -->
+    <link rel="stylesheet" href="../style/style-dashboard.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #009966">
+        <div class="container-fluid">
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../img/cfe.png" alt="Logo" width="40" height="40" class="me-2 rounded">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- MENU ITEMS -->
+                <ul class="navbar-nav ms-0 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dashboard.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./informacion.html">Mi Información</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Generar Factura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Consumo</a>
+                    </li>
+                </ul>
+
+                <div class="ml-auto"></div>
+
+                <!-- EXIT BUTTON -->
+                <a href="#" class="btn btn-outline-light">Cerrar Sesión</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN WRAPPER -->
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="row d-flex justify-content-center w-100">
+
+            <!-- MAIN CONTENT -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4">
+
+
+                <!-- ===========================
+                     GENERAR FACTURA
+                ============================ -->
+                <div class="card shadow-sm">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0">Generar Factura</h5>
+                    </div>
+
+                    <div class="card-body">
+
+                        <p class="text-muted">Selecciona el periodo facturado para obtener tu factura correspondiente.
+                        </p>
+
+                        <form>
+
+                            <!-- PERIODO -->
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">Periodo Facturado</label>
+                                <select class="form-control">
+                                    <option selected disabled>Selecciona un periodo</option>
+                                    <option>01/2025 - 03/2025</option>
+                                    <option>03/2025 - 05/2025</option>
+                                    <option>05/2025 - 07/2025</option>
+                                    <option>07/2025 - 09/2025</option>
+                                </select>
+                            </div>
+
+                            <!-- DATOS DE CONSUMO -->
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="font-weight-bold">Consumo (kWh)</label>
+                                    <input type="number" class="form-control" placeholder="350" disabled>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="font-weight-bold">Fecha de Lectura</label>
+                                    <input type="date" class="form-control" disabled>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="font-weight-bold">Fecha de Límite de Pago</label>
+                                    <input type="date" class="form-control" disabled>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="font-weight-bold">Fecha de Corte</label>
+                                    <input type="date" class="form-control" disabled>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="font-weight-bold">Tarifa</label>
+                                    <input type="number" class="form-control" placeholder="350" disabled>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="font-weight-bold">Multiplicador</label>
+                                    <input type="number" class="form-control" placeholder="350" disabled>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="font-weight-bold">No. Medidor</label>
+                                    <input type="text" class="form-control" placeholder="350" disabled>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Concepto</th>
+                                            <th scope="col">Total Periodo</th>
+                                            <th scope="col">Precio</th>
+                                            <th scope="col">Subtotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Básico</th>
+                                            <td>150</td>
+                                            <td>0.793</td>
+                                            <td>118.95</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Intermedio</th>
+                                            <td>130</td>
+                                            <td>0.956</td>
+                                            <td>124.28</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Excedente</th>
+                                            <td>13</td>
+                                            <td>2.802</td>
+                                            <td>36.43</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="col-md-6">
+                                    <label class="font-weight-bold">Apoyo Gubernamental</label>
+                                    <input type="number" class="form-control" placeholder="350" disabled>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="font-weight-bold">Adeudo Anterior</label>
+                                    <input type="number" class="form-control" placeholder="350" disabled>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="font-weight-bold">Pago Anterior</label>
+                                    <input type="number" class="form-control" placeholder="350" disabled>
+                                </div>
+                            </div>
+
+                            <!-- COSTOS -->
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="font-weight-bold">Subtotal</label>
+                                    <input type="text" class="form-control" placeholder="$0.00" disabled>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="font-weight-bold">Total con IVA</label>
+                                    <input type="text" class="form-control" placeholder="$0.00" disabled>
+                                </div>
+                            </div>
+
+                            <!-- METODO DE PAGO -->
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">Método de Pago</label>
+                                <select class="form-control">
+                                    <option>Efectivo</option>
+                                    <option>Tarjeta de Débito</option>
+                                    <option>Tarjeta de Crédito</option>
+                                    <option>Transferencia</option>
+                                </select>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-success px-4">
+                                    Generar Factura
+                                </button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
