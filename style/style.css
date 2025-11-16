@@ -1,11 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            background: linear-gradient(135deg, #e8fff4, #c7f2e1);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Segoe UI", sans-serif;
+        }
 
-body {
-    background: #2A7B9B;
-    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-    font-family: "Elms Sans", sans-serif;
-}
+        .login-card {
+            width: 420px;
+            border-radius: 20px;
+            padding: 35px;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
 
-.navbar {
-    background-color: #009966 !important;
-}
+        .login-card img {
+            width: 75px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .login-card h1 {
+            color: #009966;
+            font-weight: 700;
+            font-size: 32px;
+        }
+
+        .form-control {
+            border-radius: 10px;
+            padding: 12px;
+        }
+
+        .btn-cfe {
+            background-color: #009966;
+            color: white;
+            border-radius: 12px;
+            padding: 12px;
+            width: 60%;
+            font-size: 17px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .btn-cfe:hover {
+            background-color: #007d52;
+        }
+
+        .registro {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .registro a {
+            color: #009966;
+            font-weight: bold;
+        }
