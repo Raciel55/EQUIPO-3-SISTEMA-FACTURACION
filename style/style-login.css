@@ -1,60 +1,67 @@
-        body {
-            background: linear-gradient(135deg, #e8fff4, #c7f2e1);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: "Segoe UI", sans-serif;
-        }
+body {
+    background: linear-gradient(135deg, #e8fff4, #c7f2e1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", sans-serif;
+}
 
-        .login-card {
-            width: 420px;
-            border-radius: 20px;
-            padding: 35px;
-            background: rgba(255, 255, 255, 0.75);
-            backdrop-filter: blur(12px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
-        .login-card img {
-            width: 75px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+.login-card {
+    width: 420px;
+    border-radius: 20px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
 
-        .login-card h1 {
-            color: #009966;
-            font-weight: 700;
-            font-size: 32px;
-        }
+.login-card img {
+    width: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-        .form-control {
-            border-radius: 10px;
-            padding: 12px;
-        }
+.login-card h1 {
+    color: #009966;
+    font-weight: 700;
+    font-size: 32px;
+}
 
-        .btn-cfe {
-            background-color: #009966;
-            color: white;
-            border-radius: 12px;
-            padding: 12px;
-            width: 60%;
-            font-size: 17px;
-            font-weight: bold;
-            transition: 0.2s;
-        }
+.form-control {
+    border-radius: 10px;
+    padding: 12px;
+}
 
-        .btn-cfe:hover {
-            background-color: #007d52;
-        }
+.btn-cfe {
+    background-color: #009966;
+    color: white;
+    border-radius: 12px;
+    padding: 12px;
+    width: 60%;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.2s;
+}
 
-        .registro {
-            text-align: center;
-            font-size: 14px;
-        }
+.btn-cfe:hover {
+    background-color: #007d52;
+}
 
-        .registro a {
-            color: #009966;
-            font-weight: bold;
-        }
+.registro {
+    text-align: center;
+    font-size: 14px;
+}
+
+.registro a {
+    color: #009966;
+    font-weight: bold;
+}
